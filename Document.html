@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .nav{
+        padding: 100px;
+        background-color: blueviolet;
+        width: 1330px;
+        color: white;
+    }
+    .nav-item-1{
+        position:absolute;
+        top:20px;
+        left:900px;
+    }
+    .nav-item-2{
+        position:absolute;
+        top:20px;
+        left:1000px;
+    }
+    .nav-item-3{
+        position:absolute;
+        top:20px;
+        left:1100px;
+    }
+    .nav-item-4{
+        position:absolute;
+        top:20px;
+        left:1200px;
+    }
+    .nav-item-5{
+        position:absolute;
+        top:20px;
+        left:1300px;
+    }
+    .nav-item-active-6{
+        position:absolute;
+        top:20px;
+        left:1370px;
+        
+    }
+    .nav-item-7{
+        position:absolute;
+        top:25px;
+        left:1440px;
+    }
+    .logo{
+        position:absolute;
+        top:20px;
+        left:50px;
+    }
+    .header-image{
+        position:absolute;
+        top:70px;
+        left:1020px; 
+    }
+    .company-items-1{
+        position: absolute;
+        top:380px;
+        left:100px;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: larger;
+       list-style-type: none;
+        
+    }
+    .company-items-2{
+        position: absolute;
+        top:380px;
+        left:300px;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: larger;
+    }
+    .company-items-3{
+        position: absolute;
+        top:380px;
+        left:500px;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: larger;
+    }
+    .api-heading{
+        position: absolute;
+        top:420px;
+        left:200px;
+    }
+    .card-logo-1{
+        position: absolute;
+        top:530px;
+        left:200px;
+    }
+    .card-head-active{
+        position: absolute;
+        top:565px;
+        left:200px;
+        color: blueviolet;
+}
+    .card-body-1{
+    position:absolute;
+    top:620px;
+    left:200px;
+}
+.card-logo-2{
+    position: absolute;
+        top:530px;
+        left:400px;
+}
+.card-head-1{
+    position: absolute;
+        top:565px;
+        left:400px;
+}
+.card-body-2{
+    position: absolute;
+        top:620px;
+        left:400px;
+}
+.card-logo-3{
+    position: absolute;
+        top:530px;
+        left:600px;
+}
+.card-head-2{
+    position: absolute;
+        top:565px;
+        left:600px;
+}
+.card-body-3{
+    position: absolute;
+        top:620px;
+        left:600px;
+}
+.card-logo-4{
+    position: absolute;
+        top:530px;
+        left:800px;
+}
+.card-head-3{
+    position: absolute;
+        top:565px;
+        left:800px;
+}
+.card-body-4{
+    position: absolute;
+        top:620px;
+        left:800px;
+}
+.card-logo-5{
+    position: absolute;
+        top:530px;
+        left:1000px;
+}
+.card-head-4{
+    position: absolute;
+        top:565px;
+        left:1000px;
+}
+.card-body-5{
+    position: absolute;
+        top:620px;
+        left:1000px;
+}
+.blog-heading{
+    position:absolute;
+    top:700px;
+        left:200px;
+}
+.blog-image-1{
+    position:absolute;
+    top:820px;
+    left:190px;
+}
+.blog-content-1{
+    position:absolute;
+    top:820px;
+    left:500px;
+}
+.blog-card-bottom-image-1{
+    position: absolute;
+    top:1060px;
+    left:495px;
+}
+.blog-author-1{
+    position: absolute;
+    top:1070px;
+    left:560px;
+}
+#hh{
+    color: blueviolet;
+}
+.blog-image-2{
+    position:absolute;
+    top:820px;
+    left:700px;
+}
+.blog-content-2{
+    position:absolute;
+    top:820px;
+    left:1000px;
+}
+.blog-card-bottom-image-2{
+    position: absolute;
+    top:1060px;
+    left:1000px;
+}
+.blog-author-2{
+    position: absolute;
+    top:1070px;
+    left:1060px;
+}
+.faq-content{
+    padding:53px;
+    background-color:rgb(239, 239, 245);
+    width:1000px;
+    position: absolute;
+    top:1200px;
+    /* left:110px; */
+}
+.faq-image{
+    position: absolute;
+    top:1200px;
+    left:900px;
+}
+#bb{
+    background-color: blueviolet ;
+    color: white;
+    border-radius: 3px;
+    height: 25px;
+}
+.download-content{
+    position: absolute;
+    top:1600px;
+    left:200px;
+}
+.download-email{
+    position: absolute;
+    top:1630px;
+    left:1000px;
+    border-radius: 5px;
+}
+#cc{
+    position: relative;
+    left: -100px;
+    background-color: blueviolet ; 
+    color: white;
+    border-radius: 15px;
+    height: 30px;
+  
+}
+.footer-logo-1{
+    position: absolute;
+    top:1700;
+    left:400px;
+}
+.footer-section{
+    padding: 50px;
+    background-color: blueviolet;
+    width:1500px;
+    position: absolute;
+    top:1800px;
+}
+.list-items-1{
+    position: absolute;
+    top:100px;
+    left:50px;
+    color: white;
+    list-style-type: none;
+}
+.list-items-2{
+    position: absolute;
+    top:100px;
+    left:180px;
+    color: white;
+    list-style-type: none;
+}
+.list-items-3{
+    position: absolute;
+    top:100px;
+    left:260px;
+    color: white;
+    list-style-type: none;
+}
+.list-items-4{
+    position: absolute;
+    top:100px;
+    left:330px;
+    color: white;
+    list-style-type: none;
+}
+.list-items-5{
+    position: absolute;
+    top:100px;
+    left:400px;
+    color: white;
+    list-style-type: none;
+}
+.footer-logos-1{
+    position: absolute;
+    top:50px;
+    left:1200px;
+}
+.footer-logos-2{
+    position:absolute;
+    top:50px;
+    left:1250px;
+}
+.footer-logos-3{
+    position:absolute;
+    top:50px;
+    left:1300px;
+}
+.list-items-11{
+    position: absolute;
+    top:110px;
+    left:1200px;
+    list-style-type: none;
+    color: white;
+}
+.list-items-12{
+    position: absolute;
+    top:110px;
+    left:1250px;
+    list-style-type: none;
+    color: white;
+}
+.list-items-13{
+    position: absolute;
+    top:110px;
+    left:1320px;
+    list-style-type: none;
+    color: white;
+}
+#aa{
+    position: absolute;
+    top:750px;
+    left:1000px;
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+    
+
+    
+
+
+</style>
+<body>
+    <!-- Header Starts -->
+    <header>
+        <!-- Navigation Bar Starts -->
+        <div class="nav">
+            <!-- Navigation items Starts -->
+            <a class="nav-item-1">Home</a>
+            <a class="nav-item-2">APIs</a>
+            <a class="nav-item-3">Blogs</a>
+            <a class="nav-item-4">Forums</a>
+            <a class="nav-item-5">LogIn</a>
+            <a class="nav-item-active-6"><button>Sign up</button></a>
+            <svg class="nav-item-7" width="13" height="13" viewBox="0 0 13 13" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" 
+            d="M8.85903 8.24401L11.816 11.321L11.815 11.322C11.991 11.4877 12.0614 11.7369 11.9982 11.9703C11.9349 12.2036 11.7483 12.3831 11.5127 12.4372C11.2771 12.4914 11.0308 12.4113 10.872 12.229L7.89103 9.12901C7.04998 9.72236 6.04531 10.0397 5.01603 10.037C2.66419 10.0372 0.627975 8.40344 0.118589 6.10743C-0.390797 3.81142 0.763438 1.46979 2.89472 0.475412C5.02599 -0.518963 7.56198 0.100953 8.99418 1.96641C10.4264 3.83187 10.3702 6.44192 8.85903 8.24401ZM8.44412 3.59725C7.86941 2.21135 6.51636 1.3082 5.01603 1.30901C2.9693 1.31231 1.31123 2.97128 1.30903 5.01801C1.30903 6.51834 2.21291 7.8709 3.59912 8.44487C4.98532 9.01883 6.58078 8.70114 7.64139 7.63996C8.702 6.57878 9.01883 4.98314 8.44412 3.59725Z" fill="white"/>
+              </svg>
+        </nav>
+
+        <!-- LOGO -->
+        <div >
+            <img class="logo" src="./Logo (1).png" >
+        </div>
+
+        <!-- Text -->
+        <div class="header-text">
+            <img src="./Rectangle_12.png">
+            <h2>
+                Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+
+        <!-- Image -->
+        <div>
+            <img class="header-image" src="./IMAGE HERE (1).png" width="500px" height="400px">
+        </div>
+    </header>
+    <!-- Companies -->
+    <div class="companies">
+        <a class="company-items-1">Company One</a>
+        <a class="company-items-2">Company Two</a>
+        <a class="company-items-3">Company Three</a>
+    </div>
+
+    <!-- API Section -->
+    <div class="api">
+        <h1 class="api-heading">APIs <br> by category</h1>
+    <!-- Cards -->
+        <div class="cards">
+            <!-- Card 01 -->
+            <div class="card-active" style="border: 1px black;">
+                <img class="card-logo-1" src="./Group 97.png">
+                <h3 class="card-head-active">Identity & <br> Security</h3>
+                <p class="card-body-1">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+            </div>
+            <!-- Card 02 -->
+            <div class="card">
+                <img class="card-logo-2" src="./Group 98.png">
+                <h3 class="card-head-1">Data & <br> Analytics</h3>
+                <p class="card-body-2">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+            </div>
+            <!-- Card 03 -->
+            <div class="card">
+                <img class="card-logo-3" src="./Group 99.png">
+                <h3 class="card-head-2">Commercial</h3>
+                <p class="card-body-3">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+            </div>
+            <!-- Card 04 -->
+            <div class="card">
+                <img class="card-logo-4" src="./Group 100.png">
+                <h3 class="card-head-3">Offers & <br> Benefits</h3>
+                <p class="card-body-4">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+            </div>
+            <!-- Card 05 -->
+            <div class="card">
+                <img class="card-logo-5" src="./Group 101.png">
+                <h3 class="card-head-4">Payment <br> Methods</h3>
+                <p class="card-body-5">Lorem ipsum dolor sit amt, <br> consectetur adipiscing.</p>
+            </div>
+
+        </div>        
+    </div>
+
+    <!-- Blog section -->
+    <div class="blog">
+        <h4 id="aa">See All Article</h4>
+    <div class="blog-heading">
+            <h1>Latest <br> blog article</h1>
+    </div>
+        <!-- Blogs -->
+    <div class="blog-cards">
+            <!-- Blog card 01 -->
+        <div class="blog-card">
+                <div class="blog-image-1" width="200px" height="100px">
+                    <img src="./Rectangle.png" alt="" >
+                </div>
+                <div class="blog-content-1">
+                    <h6 id="hh"> 06 Aug 2019</h6>
+                    <h3 >Custom-made <br> loyalty programme</h3>
+                    <small>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. 
+                        <br> consectetur adipisicing elit. <br>Lorem ipsum dolor sit amet</small>
+                </div>
+                <div class="blog-bottom">
+                    <img class="blog-card-bottom-image-1" src="./IMAGE HERE (2).png" alt="">
+                </div>
+                <div class="blog-author">
+                    <b class="blog-author-1">Bobby Wagner</b>
+                </div>
+                
+            </div>
+
+            <!-- Blog card 02 -->
+
+            <div class="blog-card">
+                <div class="blog-image-2">
+                    <img src="./Rectangle Copy.png" alt="" >
+                </div>
+                <div class="blog-content-2">
+                    <h6 id="hh" >08 Aug 2019</h6>
+                    <h3 >You can <br> travel with ease</h3>
+                    <small>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br> 
+                        consectetur adipisicing elit. <br>Lorem ipsum dolor sit amet</small>
+                </div>
+                <div class="blog-bottom">
+                    <img class="blog-card-bottom-image-2" src="./IMAGE HERE (2).png" alt="">
+                </div>
+                <div class="blog-author">
+                    <b class="blog-author-2">Gloria Graham</b>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- FAQ SECTION -->
+        <div class="faq-section">
+            <div class="faq-content">
+                <h2>Have <br> a question</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique mollitia 
+                    <br>nam animi exercitationem et eum enim nulla veritatis,</h5>
+                <h4>Do you have any question about anythings ?</h4>
+
+                <button id="bb">Contact Us</button>
+            </div>
+            <div class="faq-image">
+                <img src="./Rectangle_38-2 (1).png" alt="">
+            </div>
+        </div>
+
+        <!-- Download -->
+        <div class="download-section">
+            <div class="download-content">
+                <h1>Download <span> Now</span></h1>
+            </div>
+            <div class="download-email">
+                <form>
+                    <input placeholder="Enter your email address" style="border-radius: 20px; width: 400px;height: 30px; background-color: rgb(208, 208, 221);">
+                    <button id="cc" >DOWNLOAD</button>
+                  </form>
+            </div>
+        </div>
+
+        <!-- Download -->
+        <div class="footer-section">
+            <div class="footer-left">
+                <img class="footer-logo"src="./Logo (1).png" alt="">
+                <ul class="list">
+                    <li class="list-items-1">@lopem ipsum</li>
+                    <li class="list-items-2">Home   |</li>
+                    <li class="list-items-3">APIs   |</li>
+                    <li class="list-items-4">Blogs   |</li>
+                    <li class="list-items-5">Forums   |</li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-right">
+                    <img class="footer-logos-1" src="./Group 102.png" alt="">
+                    <img class="footer-logos-2" src="./Group 103.png" alt="">
+                    <img class="footer-logos-3" src="./Group 104.png" alt="">
+                </div>
+                <ul class="logos-list">
+                    <li class="list-items-11">FAQ</li>
+                    <li class="list-items-12">Business</li>
+                    <li class="list-items-13">Help</li>
+                </ul>
+            </div>
+            
+        </div>
+</body>
+</html>
